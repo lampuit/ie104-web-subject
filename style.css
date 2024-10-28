@@ -1,0 +1,169 @@
+/* 22520743 */
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+/* 22520743 */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/font-family/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Serif";
+  src: url("/font-family/PT_Serif/PTSerif-Regular.ttf") format("truetype");
+}
+
+/* 22520743 */
+body {
+  font-family: "Serif";
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.2rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+/* 22520743 */
+a:link,
+a:focus,
+a:visited,
+a:hover {
+  color: #a66;
+}
+
+a:hover,
+a:focus {
+  color: #a66;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  font-weight: 1000;
+  color: rgb(187, 0, 0);
+  text-shadow: 1px 1px 2px black;
+}
+
+a[href^="http"]:after {
+  content: "";
+  display: inline-block;
+  background-image: url("external-link-52.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/* 22520743 */
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+section ol {
+  list-style: lower-alpha;
+}
+
+
+/* 22520743 */
+nav ul li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid #a66;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  margin: 1rem;
+  color: #a66;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li:hover {
+  background-color: #a66;
+}
+
+nav ul li:hover a {
+  color: #fff;
+}
+
+footer {
+  font-size: 0.8rem;
+}
