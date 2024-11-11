@@ -1,0 +1,120 @@
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+}
+
+nav {
+  background-color: #000;
+  padding: 0.5em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  width: 200px;
+}
+
+/* 22520743 */
+/* 3.1 */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 22520743 */
+/* 3.2 */
+nav {
+  position: sticky;
+  top: 0;
+}
+
+/* 22520743 */
+/* 3.3 */
+article img {
+  float: left;
+  margin-right: 1rem;
+}
+
+/* 22520743 */
+/* 3.4 Phần tử <article> và <aside> hiển thị theo bố cục 2 cột. Các cột này phải có kích
+thước linh hoạt, khi trình duyệt kéo nhỏ lại thì các cột cũng trở nên hẹp hơn. */
+/* C1 Dùng Grid
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 10px;
+}
+
+article {
+  grid-column: 1 / span 2;  
+}
+
+aside {
+  grid-column: 3 / span 1;
+}
+
+*/
+
+/* 22520743 */
+/* 3.4 Phần tử <article> và <aside> hiển thị theo bố cục 2 cột. Các cột này phải có kích
+thước linh hoạt, khi trình duyệt kéo nhỏ lại thì các cột cũng trở nên hẹp hơn. */
+/* C2 Dùng Flex */
+.grid {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo các cột sẽ xuống dòng khi không đủ chỗ */
+  gap: 10px; /* Khoảng cách giữa các cột */
+}
+
+article {
+  flex: 1 1 70%; /* Cột linh hoạt với kích thước tối thiểu là 70% */
+}
+
+aside {
+  flex: 1 1 25%; /* Cột linh hoạt với kích thước tối thiểu là 25% */
+}
+
+/* 22520743 */
+/* 3.5. Phần hình ảnh được hiển thị theo 2 cột lưới với 1pixel 
+khoảng cách giữa các hình. */
+
+aside ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
