@@ -71,30 +71,10 @@ article img {
   margin-right: 1rem;
 }
 
-/* 22520743 */
-/* 3.4 Phần tử <article> và <aside> hiển thị theo bố cục 2 cột. Các cột này phải có kích
-thước linh hoạt, khi trình duyệt kéo nhỏ lại thì các cột cũng trở nên hẹp hơn. */
-/* C1 Dùng Grid
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 10px;
-}
-
-article {
-  grid-column: 1 / span 2;  
-}
-
-aside {
-  grid-column: 3 / span 1;
-}
-
-*/
 
 /* 22520743 */
 /* 3.4 Phần tử <article> và <aside> hiển thị theo bố cục 2 cột. Các cột này phải có kích
 thước linh hoạt, khi trình duyệt kéo nhỏ lại thì các cột cũng trở nên hẹp hơn. */
-/* C2 Dùng Flex */
 .grid {
   display: flex;
   flex-wrap: wrap; /* Đảm bảo các cột sẽ xuống dòng khi không đủ chỗ */
